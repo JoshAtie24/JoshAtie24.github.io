@@ -2,7 +2,6 @@
 <html>
   <head>
     <style>
-      Document.body.style.backgroundColor = favcolor.value;
       h1 {color: blue;}
       p {color: red;}
     </style>
@@ -12,6 +11,11 @@
     <img src="https://giphy.com/clips/storyful-animals-carolina-dog-spirit-23-vNOmDhm5NUPGNytGqG" alt="Profile Picture">
     <br> <label for="favcolor">Select your favourite colour:</label>
     <input type="color" id="favcolor" name="favcolor">
+     <button onclick = "selectColor()"> Change the color </button>
+     <script>
+      function selectColor() {
+         let color = document.getElementById('colorInput');
+         document.body.style.backgroundColor = color.value;
     <p>This is a pargraph</p>
     <p>Please print</p>
     <details> 
